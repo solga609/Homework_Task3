@@ -58,3 +58,22 @@ def mul_pairs(list_nums: list):
 new_list = list_rand_nums(int(input("Введите значение: ")))
 print(new_list)
 print(mul_pairs(new_list))
+
+
+# 3. Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+# Без использования встроенной функции преобразования, без строк.Без использования встроенной функции преобразования, без строк.
+# in
+# 88
+# out
+# 1011000
+# in
+# 11
+# out
+# 1011
+
+n = int(input("Enter number: "))
+b = ''
+while n > 0:
+    b = str(n % 2) + b
+    n = n // 2
+print("The result is: " + b)
